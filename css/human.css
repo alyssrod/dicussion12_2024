@@ -79,14 +79,18 @@ h3{
 /*
 Style the Pros box to have a background color of (216, 244, 214)
  */
-
+.pro { 
+  background-color: 216, 244, 214; 
+} 
 
 
 
 /*
 Style the cons box to have a background color of (231, 162, 162)
  */
-
+.con {
+  background-color: 231, 162, 162; 
+} 
 
 
 /*
