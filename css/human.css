@@ -1,10 +1,16 @@
 /*
 Style the body 
 
+
 Use 80px of padding all around the body.
 Use (254, 249, 242) as the background color.
 Use 16px font size
  */
+body{
+  padding: 80px; 
+  background-color: 254, 249, 242; 
+  font-size: 16px; 
+} 
 
 
 
@@ -13,41 +19,68 @@ Style the container class
 
 Use appropriate grid properties to achieve the desired layout
  */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-gap: 15px;
+}
 
-
-
-
+.container > :first-child{
+  display: grid;
+  grid-column: 1 / -1;
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
 
 /*
 Use appropriate flex properties on content-wrap, pros and cons classes to achieve the desired layout
  */
 
-
+header {
+    display: flex; 
+    flex-wrap: nowrap; 
+    flex-direction: column; 
+    align-items: center; 
+}
 
 
 /*
 Style the image to have the proper width and a solid border
  */
-
+.gallery img {
+    width: 300px; 
+    margin: 10px; 
+    border: solid 10px #50C7C7; 
+}
 
 
 /*
 Style the H1 to have 48px font size and 700 weight
  */
-
-
+h1{
+  font-size: 48px; 
+  weight: 700px; 
+}
 
 /*
 Style the H2 to have 28px font size and 500 weight
  */
-
+h2{
+  font-size: 28px; 
+  weight: 500; 
+}
 
 
 /*
 Style the H3 to have 24px font size and 400 weight and the proper alignment
  */
 
-
+h3{
+  font-size: 24px; 
+  weight: 400; 
+  text-align: center; 
+}
 
 
 
